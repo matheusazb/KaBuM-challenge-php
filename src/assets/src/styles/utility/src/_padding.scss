@@ -1,0 +1,23 @@
+$PADDING_SIZES: 0 4 8 12 16 24 32 40 48 56 64;
+
+@include padding(default, $PADDING_SIZES); /** u-pd-8 */
+@include padding(top, $PADDING_SIZES); /** u-pt-8 */
+@include padding(left, $PADDING_SIZES); /** u-pl-8 */
+@include padding(right, $PADDING_SIZES); /** u-pr-8 */
+@include padding(bottom, $PADDING_SIZES); /** u-pb-8 */
+
+@include mediaquery(sm) {
+  @include padding(default, $PADDING_SIZES, sm);
+  @include padding(top, $PADDING_SIZES, sm);
+  @include padding(left, $PADDING_SIZES, sm);
+  @include padding(right, $PADDING_SIZES, sm);
+  @include padding(bottom, $PADDING_SIZES, sm);
+}
+
+@include mediaquery(md) {
+  @include padding(default, $PADDING_SIZES, md);
+  @include padding(top, $PADDING_SIZES, md);
+  @include padding(left, $PADDING_SIZES, md);
+  @include padding(right, $PADDING_SIZES, md);
+  @include padding(bottom, $PADDING_SIZES, md);
+}

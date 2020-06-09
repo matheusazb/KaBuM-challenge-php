@@ -1,0 +1,14 @@
+.c-login {
+  margin: 0 auto;
+  max-width: 100%;
+
+  @include mediaquery(sm) {
+    max-width: 360px;
+  }
+}
+
+.u-login-background {
+  background: url("/assets/static/images/background-04.png");
+  background-size: cover;
+  background-position: left center;
+}

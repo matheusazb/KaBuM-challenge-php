@@ -1,0 +1,15 @@
+@mixin margin($prop, $fonts, $size: "") {
+  @each $font in $fonts {
+    $prefix: str-slice($prop, 1, 1);
+
+    @if $size != "" {
+      .u-m#{$prefix}-#{$font}\@#{$size} {
+        margin-#{$prop}: #{($font/16)}rem;
+      }
+    } @else {
+      .u-m#{$prefix}-#{$font} {
+        margin-#{$prop}: #{($font/16)}rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+$FONT_SIZES: 12 14 16 18 20 22 24 26 28 40 52 58 60;
+
+@include fontsize($FONT_SIZES);
+
+@include mediaquery(sm) {
+  @include fontsize($FONT_SIZES, 'sm');
+}
+
+@include mediaquery(md) {
+  @include fontsize($FONT_SIZES, 'md');
+}

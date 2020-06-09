@@ -1,0 +1,15 @@
+.c-header {
+  display: flex;
+  background: $color-blue-dark;
+}
+
+.c-badge {
+  border-radius: 8px;
+  padding: 2px 4px;
+  font-size: 12px;
+
+  &--blue {
+    background-color: $color-blue-light;
+    color: white;
+  }
+}

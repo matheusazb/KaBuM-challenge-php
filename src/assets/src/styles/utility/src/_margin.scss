@@ -1,0 +1,28 @@
+$MARGIN_SIZES: 0 4 8 12 16 24 32 40 48 56 64;
+
+.u-m-0 {
+  margin: 0;
+}
+
+.u-m-auto {
+  margin: auto;
+}
+
+@include margin(top, $MARGIN_SIZES);
+@include margin(left, $MARGIN_SIZES);
+@include margin(right, $MARGIN_SIZES);
+@include margin(bottom, $MARGIN_SIZES);
+
+@include mediaquery(sm) {
+  @include margin(top, $MARGIN_SIZES, sm);
+  @include margin(left, $MARGIN_SIZES, sm);
+  @include margin(right, $MARGIN_SIZES, sm);
+  @include margin(bottom, $MARGIN_SIZES, sm);
+}
+
+@include mediaquery(md) {
+  @include margin(top, $MARGIN_SIZES, md);
+  @include margin(left, $MARGIN_SIZES, md);
+  @include margin(right, $MARGIN_SIZES, md);
+  @include margin(bottom, $MARGIN_SIZES, md);
+}

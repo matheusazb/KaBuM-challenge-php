@@ -1,0 +1,9 @@
+@mixin grid($prefix, $columns) {
+  @for $current from 1 through $columns {
+    .o-column-#{$current}\@#{$prefix} {
+      flex: 0 0 percentage($current / $columns);
+      -webkit-flex: 0 0 percentage($current / $columns);
+      max-width: percentage($current / $columns);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.u-dn {
+  display: none;
+}
+
+.u-db {
+  display: block;
+}
+
+.u-flex {
+  display: flex;
+}
+
+@include mediaquery(sm) {
+  .u-dn\@sm {
+    display: none;
+  }
+
+  .u-db\@sm {
+    display: block;
+  }
+
+  .u-flex\@sm {
+    display: flex;
+  }
+}
+
+@include mediaquery(md) {
+  .u-dn\@md {
+    display: none;
+  }
+
+  .u-db\@md {
+    display: block;
+  }
+
+  .u-flex\@md {
+    display: flex;
+  }
+}
